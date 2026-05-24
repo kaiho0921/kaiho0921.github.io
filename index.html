@@ -10,11 +10,13 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: #1f2328;
       background: #ffffff;
+      --muted: #57606a;
+      --border: #d0d7de;
     }
 
     body {
       margin: 0;
-      padding: 48px 24px;
+      padding: 56px 24px;
       line-height: 1.6;
     }
 
@@ -24,27 +26,61 @@
     }
 
     h1 {
-      margin: 0 0 16px;
-      font-size: 2rem;
+      margin: 0;
+      font-size: 2.25rem;
       line-height: 1.2;
     }
 
     h2 {
-      margin-top: 32px;
-      font-size: 1.2rem;
+      margin: 36px 0 12px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 1.15rem;
     }
 
     a {
       color: #0969da;
+    }
+
+    .subtitle {
+      margin: 8px 0 24px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .meta {
+      margin: 0 0 28px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .meta li {
+      margin: 4px 0;
+    }
+
+    .note {
+      color: var(--muted);
     }
   </style>
 </head>
 <body>
   <main>
     <h1>Matsuyama Kaiho</h1>
+    <p class="subtitle">Independent Researcher</p>
 
-    <p><strong>Affiliation:</strong> Independent Researcher</p>
-    <p><strong>Email:</strong> <a href="mailto:kaiho.matsuyama@gmail.com">kaiho.matsuyama@gmail.com</a></p>
+    <ul class="meta">
+      <li><strong>Affiliation:</strong> Independent Researcher</li>
+      <li><strong>Email:</strong> <a href="mailto:kaiho.matsuyama@gmail.com">kaiho.matsuyama@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/kaiho0921">github.com/kaiho0921</a></li>
+    </ul>
+
+    <h2>About</h2>
+    <p>
+      I am a working professional who pursues research independently outside
+      institutional research employment. My current interests are in how machine
+      learning systems make adaptive decisions under partial observation,
+      especially for LLM routing and adaptive inference.
+    </p>
 
     <h2>Research Interests</h2>
     <ul>
@@ -54,9 +90,17 @@
       <li>LLM routing</li>
     </ul>
 
-    <p>
+    <h2>Research Themes</h2>
+    <ul>
+      <li>Evaluation from logs with partial or prefix-level observations</li>
+      <li>Adaptive inference policies and stopping-depth decisions</li>
+      <li>Cost-aware routing between models and inference procedures</li>
+    </ul>
+
+    <h2>Profile Verification</h2>
+    <p class="note">
       This page is maintained as a public identity page for OpenReview profile
-      verification.
+      verification. It lists my current affiliation and contact email.
     </p>
   </main>
 </body>
